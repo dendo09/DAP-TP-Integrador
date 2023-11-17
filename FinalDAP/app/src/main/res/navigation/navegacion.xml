@@ -8,5 +8,26 @@
         android:id="@+id/pantallaLogin2"
         android:name="com.example.finaldap.PantallaLogin"
         android:label="fragment_pantalla_login"
-        tools:layout="@layout/fragment_pantalla_login" />
+        tools:layout="@layout/fragment_pantalla_login" >
+        <action
+            android:id="@+id/action_pantallaLogin2_to_pantallaRegistrar"
+            app:destination="@id/pantallaRegistrar" />
+        <action
+            android:id="@+id/action_pantallaLogin2_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaRegistrar"
+        android:name="com.example.finaldap.PantallaRegistrar"
+        android:label="fragment_pantalla_registrar"
+        tools:layout="@layout/fragment_pantalla_registrar" >
+        <action
+            android:id="@+id/action_pantallaRegistrar_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.finaldap.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" />
 </navigation>
