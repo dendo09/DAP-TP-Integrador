@@ -7,8 +7,8 @@
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="Delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.186" />
 
     <ImageView
-        android:id="@+id/Foto"
+        android:id="@+id/foto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:background="@color/black" />
 
     <TextView
         android:id="@+id/teamName"
@@ -36,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toEndOf="@+id/Foto"
+        app:layout_constraintStart_toEndOf="@+id/foto"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.251"
         tools:text="Equipo" />
@@ -48,15 +49,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toEndOf="@+id/Foto"
+        app:layout_constraintStart_toEndOf="@+id/foto"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.725"
         tools:text="Posicion" />
 
     <Button
         android:id="@+id/btnEdit"
-        android:layout_width="82dp"
-        android:layout_height="42dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="Edit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
