@@ -7,15 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class PantallaInicio : Fragment() {
+class editarEquipo : Fragment() {
 
-    private lateinit var viewModel: PantallaInicioViewModel
+    companion object {
+        fun newInstance() = editarEquipo()
+    }
+
+    private lateinit var viewModel: EditarEquipoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_pantalla_inicio, container, false)
+        val view = inflater.inflate(R.layout.fragment_editar_equipo, container, false)
 
         return view
     }
